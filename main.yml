@@ -16,7 +16,7 @@
   
   - name: Build image
     docker_image:
-    build:
-      path: /home/kalyan/tomcat
+      build:
+        path: /home/kalyan/tomcat
     name: whatever/whocare
     tag: v1
