@@ -4,16 +4,16 @@
   
   tasks:
   
-  - name: Prior Modifications
-    shell: TOMCAT="$(ls -v apache-tomcat-*.gz | tail -n 1)" && sed -i "s|\(apache-tomcat-\).*|$TOMCAT|g" Dockerfile
-    args:  
-      chdir: /home/kalyan/tomcat
-      
-  - name: Same thing stupid
-    shell: JAVA="$(ls -v jdk-*.gz | tail -n 1)" && sed -i "s|\(jdk-\).*|$JAVA|g" Dockerfile
-    args:
-      chdir: /home/kalyan/tomcat
-  
+#  - name: Prior Modifications
+#    shell: TOMCAT="$(ls -v apache-tomcat-*.gz | tail -n 1)" && sed -i "s|\(apache-tomcat-\).*|$TOMCAT|g" Dockerfile
+#    args:  
+#      chdir: /home/kalyan/tomcat
+#      
+#  - name: Same thing stupid
+#    shell: JAVA="$(ls -v jdk-*.gz | tail -n 1)" && sed -i "s|\(jdk-\).*|$JAVA|g" Dockerfile
+#    args:
+#      chdir: /home/kalyan/tomcat
+#  
   - name: Build image
     docker_image:
       build:
