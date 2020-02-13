@@ -5,7 +5,7 @@
   tasks:
   
   - name: Prior Modifications
-    shell: TOMCAT="$(ls -v apache-tomcat-*.gz | tail -n 1)" && sed -i "s|\(apache-tomcat-\).*|$TOMCAT|g" Dockerfile
+    cmd: TOMCAT="$(ls -v apache-tomcat-*.gz | tail -n 1)" && sed -i "s|\(apache-tomcat-\).*|$TOMCAT|g" Dockerfile
       chdir: /home/kalyan/tomcat
       
   - name: Same thing stupid
