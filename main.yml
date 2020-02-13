@@ -14,7 +14,7 @@
     args:
       chdir: /home/kalyan/tomcat
   
-  - name: Build an image and push it to a private repo
+  - name: Build image
     docker_image:
     build:
       path: /home/kalyan/tomcat
