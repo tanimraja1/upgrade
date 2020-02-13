@@ -20,5 +20,4 @@
       path: /home/kalyan/tomcat
     name: whatever/whocare
     tag: v1
-    push: no
     source: build
