@@ -1,1 +1,3 @@
-nothing here... $%##$ off
+---
+- name: KABOOM!
+  hosts: all
