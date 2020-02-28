@@ -9,5 +9,5 @@
 - name: download tomcat package
   get_url:
     url: "http://apachemirror.wuchna.com/tomcat/tomcat-{{ tomcat_version.stdout }}/v{{ tomcat_sub_version.stdout }}/bin/apache-tomcat-{{ tomcat_sub_version.stdout }}.tar.gz"
-    dest: "/var/www/html/pub/"
+    dest: "/home/tanim/kalyan"
     timeout: 120
