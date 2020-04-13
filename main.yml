@@ -1,12 +1,7 @@
 ---
-- name: Download package
+- name: docker-compose up
   hosts: all
-  become: no
+  become: yes
   roles:
         - tomcat
 
-#- name: Tomcat upgrade
-#  hosts: all
-#  become: yes
-#  roles:
-#    - tomcat-upgrade
