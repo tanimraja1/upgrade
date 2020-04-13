@@ -1,4 +1,4 @@
 - name: docker-compose upping
   docker_compose:
-    path_src: /home/tanim/docker-containers
+    project_src: /home/tanim/docker-containers
     state: present
